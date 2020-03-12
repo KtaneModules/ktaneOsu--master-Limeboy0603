@@ -290,7 +290,7 @@ public class Osu : MonoBehaviour
 
     void submit()
     {
-        Debug.LogFormat("[Osu! {0}]Submitted image: {1}. Correct image: {2}", _moduleID, random_mapBG[canvas_currentimagecounter], random_mapinfo);
+        Debug.LogFormat("[Osu! {0}]Submitted image: {1}. Correct image: {2}", _moduleID, random_mapBG[canvas_currentimagecounter], random_mapBG[random_mapinfo]);
         if (random_mapBG[canvas_currentimagecounter] == random_mapBG[random_mapinfo])
         {
             Module.HandlePass();
