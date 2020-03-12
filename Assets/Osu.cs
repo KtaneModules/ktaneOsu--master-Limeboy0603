@@ -62,7 +62,7 @@ public class Osu : MonoBehaviour
                 while(selectedmapBG == random_mapBG[j])
                     selectedmapBG = Random.Range(0, 50);
             }
-            Debug.LogFormat("<Osu! {0}>Generated map background: {1}", _moduleID ,selectedmapBG);
+            Debug.LogFormat("[Osu! {0}]Generated map background: {1}", _moduleID ,selectedmapBG);
         }
         canvas_image.material.mainTexture = BGimage[random_mapBG[0]];
     }
@@ -277,7 +277,7 @@ public class Osu : MonoBehaviour
                 break;
         }
         MapInfo_Map.text = map_song + "\n" + map_author_mapper;
-        Debug.LogFormat("<Osu! {0}> Generated map song: {1}. Author and creator: {2}", _moduleID, map_song, map_author_mapper);
+        Debug.LogFormat("[Osu! {0}] Generated map song: {1}. Author and creator: {2}", _moduleID, map_song, map_author_mapper);
     }
 
     void changeBG()
@@ -290,7 +290,7 @@ public class Osu : MonoBehaviour
 
     void submit()
     {
-        Debug.LogFormat("<Osu! {0}>Submitted image: {1}. Correct image: {2}", _moduleID, random_mapBG[canvas_currentimagecounter], random_mapinfo);
+        Debug.LogFormat("[Osu! {0}]Submitted image: {1}. Correct image: {2}", _moduleID, random_mapBG[canvas_currentimagecounter], random_mapinfo);
         if (random_mapBG[canvas_currentimagecounter] == random_mapBG[random_mapinfo])
         {
             Module.HandlePass();
