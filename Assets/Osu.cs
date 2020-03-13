@@ -46,6 +46,7 @@ public class Osu : MonoBehaviour
     
     void init()
     {
+        canvas_currentimagecounter = -1;
         generate_image();
         generate_mapinfo();
     }
