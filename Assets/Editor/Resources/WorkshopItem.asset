@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Name: WorkshopItem
   m_EditorClassIdentifier: 
   WorkshopPublishedFileID: 2020119635
-  Title: Osu!
-  Tags: []
+  Title: osu!
+  Tags:
+  - Regular Module

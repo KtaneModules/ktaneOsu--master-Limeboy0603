@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Name: ModConfig
   m_EditorClassIdentifier: 
   id: osu
-  title: Osu!
+  title: osu!
   author: Limeboy
   description: 'CLICK THE CIRCLES
 
 
-    Credits to all osu beatmappers and background image creators. I don''t own any
+    Credits to all osu! beatmappers and background image creators. I don''t own any
     pictures shown in this module.
 
 
