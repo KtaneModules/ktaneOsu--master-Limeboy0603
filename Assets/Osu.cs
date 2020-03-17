@@ -305,6 +305,10 @@ public class Osu : MonoBehaviour
         }
     }
 
+#pragma warning disable 414
+    private readonly string TwitchHelpMessage = @"Change picture with !{0} change. Submit with !{0} submit.";
+#pragma warning restore 414
+
     KMSelectable[] ProcessTwitchCommand(string command)
     {
         command = command.ToLowerInvariant().Trim();
