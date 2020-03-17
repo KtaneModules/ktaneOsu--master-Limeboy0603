@@ -21,7 +21,7 @@ public class Osu : MonoBehaviour
     //module variable declerations
     private int random_mapinfo;
     private int[] random_mapBG = new int[5];
-    private int canvas_currentimagecounter=-1;
+    private int canvas_currentimagecounter=0;
 
     void Awake()
     {
@@ -46,7 +46,7 @@ public class Osu : MonoBehaviour
     
     void init()
     {
-        canvas_currentimagecounter = -1;
+        canvas_currentimagecounter = 0;
         generate_image();
         generate_mapinfo();
     }
