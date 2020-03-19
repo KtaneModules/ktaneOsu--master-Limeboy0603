@@ -56,12 +56,12 @@ public class Osu : MonoBehaviour
         int selectedmapBG;
         for (int i = 0 ; i <= 4 ; i++)
         {
-            selectedmapBG = Random.Range(0, 50);
+            selectedmapBG = Random.Range(0, 70);
             random_mapBG[i] = selectedmapBG;
             for (int j = 0; j <= i - 1; j++)
             {
                 while(selectedmapBG == random_mapBG[j])
-                    selectedmapBG = Random.Range(0, 50);
+                    selectedmapBG = Random.Range(0, 70);
             }
             Debug.LogFormat("[osu! #{0}]Generated map background: {1}", _moduleID ,selectedmapBG);
         }
@@ -276,7 +276,88 @@ public class Osu : MonoBehaviour
                 map_song = "Cycle Hit";
                 map_author_mapper = "KASAI HARCORES // Worminators";
                 break;
+            case 50:
+                map_song = "Everything will freeze";
+                map_author_mapper = "UNDEAD CORPORATION // Ekoro";
+                break;
+            case 51:
+                map_song = "Yume Tourou";
+                map_author_mapper = "RADWIMPS // Monstrata";
+                break;
+            case 52:
+                map_song = "Teo";
+                map_author_mapper = "Onot // Kroytz";
+                break;
+            case 53:
+                map_song = "Tengaku";
+                map_author_mapper = "Wagakki Band // Shiro";
+                break;
+            case 54:
+                map_song = "Fury of the Storm";
+                map_author_mapper = "DragonForce // Kayne";
+                break;
+            case 55:
+                map_song = "Exit This Earth's Atomosphere";
+                map_author_mapper = "Camellia // rrtyui";
+                break;
+            case 56:
+                map_song = "Soldiers of the Wasteland";
+                map_author_mapper = "DragonForce // Atsuro";
+                break;
+            case 57:
+                map_song = "Can't Defeat Airman";
+                map_author_mapper = "Team Nekokan // Blue Dragon";
+                break;
+            case 58:
+                map_song = "Dark Steering";
+                map_author_mapper = "Squarepusher // dsco";
+                break;
+            case 59:
+                map_song = "Memes (Speed Up Ver.)";
+                map_author_mapper = "NIVIRO // Asaiga";
+                break;
+            case 60:
+                map_song = "Grand Escape (Movie edit) feat. Miura Touko";
+                map_author_mapper = "RADWIMPS // hypercyte";
+                break;
+            case 61:
+                map_song = "Space Battle";
+                map_author_mapper = "F-777 // DeRandom Otaku";
+                break;
+            case 62:
+                map_song = "Battle Against a True Hero";
+                map_author_mapper = "toby fox vs. Ferdk // Hobbes2";
+                break;
+            case 63:
+                map_song = "Wings of Piano";
+                map_author_mapper = "V.K. // FlobuFlobs";
+                break;
+            case 64:
+                map_song = "Snow Drive(01.23)";
+                map_author_mapper = "Omoi";
+                break;
+            case 65:
+                map_song = "Frame of Mind";
+                map_author_mapper = "Tristam & Braken // Fort";
+                break;
+            case 66:
+                map_song = "Faded";
+                map_author_mapper = "Alan Walker // Astarte";
+                break;
+            case 67:
+                map_song = "Till it's Over";
+                map_author_mapper = "Tristam // [Luanny]";
+                break;
+            case 68:
+                map_song = "Cold Green Eyes";
+                map_author_mapper = "Station Earth // Bearizm";
+                break;
+            case 69:
+                map_song = "Uchiage Hanabi";
+                map_author_mapper = "DAOKO x Kenshi Yonezu // Monstrata";
+                break;
         }
+
         MapInfo_Map.text = map_song + "\n" + map_author_mapper;
         Debug.LogFormat("[osu! #{0}] Generated map song: {1}. Author and creator: {2}", _moduleID, map_song, map_author_mapper);
     }

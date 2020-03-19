@@ -119,7 +119,7 @@ GameObject:
   - component: {fileID: 114583726430916038}
   - component: {fileID: 114154494013590172}
   m_Layer: 0
-  m_Name: Osu!
+  m_Name: osu!
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -620,6 +620,26 @@ MonoBehaviour:
   - {fileID: 2800000, guid: 6e1dcea6cab2b6d49af1585da03817c8, type: 3}
   - {fileID: 2800000, guid: a32b9a20e8eea774b8b5301deadc9d91, type: 3}
   - {fileID: 2800000, guid: 6a84c53f099581a4a82102b88ad32abb, type: 3}
+  - {fileID: 2800000, guid: 9f935a2daa873464aa6409e300f817d1, type: 3}
+  - {fileID: 2800000, guid: 31f511949e97aff4f9adad33c235301a, type: 3}
+  - {fileID: 2800000, guid: 440a1688f55aff546bbb3ef1525c5627, type: 3}
+  - {fileID: 2800000, guid: aa7e101a8dee0be4288fc817afc711ae, type: 3}
+  - {fileID: 2800000, guid: 56b46ea8599fd504e977b68f9534dfa6, type: 3}
+  - {fileID: 2800000, guid: 3e338859536faef46bc4095516b4d028, type: 3}
+  - {fileID: 2800000, guid: 9c4c5fd74ce37094696678fcea26ab67, type: 3}
+  - {fileID: 2800000, guid: 109a2c717c7b2a442a78e9515f84759a, type: 3}
+  - {fileID: 2800000, guid: 87c4a87eeb87f97439eb4723efc56423, type: 3}
+  - {fileID: 2800000, guid: f557bb07017727647b8b0cb4fc6db692, type: 3}
+  - {fileID: 2800000, guid: aaef8bc1e1636864bab4ef702bcfe4dd, type: 3}
+  - {fileID: 2800000, guid: f03b631be2c84cd40ac6ba7f19d7beb1, type: 3}
+  - {fileID: 2800000, guid: a9e6c653ae5f966429fbe09dc083e62e, type: 3}
+  - {fileID: 2800000, guid: ee7ac7048510d124cabbfd7252e8c412, type: 3}
+  - {fileID: 2800000, guid: d32031d22adc5ad4fa076c974dd3afb9, type: 3}
+  - {fileID: 2800000, guid: 72d71d1ce1f9bdb4bba567ed9217714f, type: 3}
+  - {fileID: 2800000, guid: 4af724fb2ebccbd4c9c2d3cb7e3c8713, type: 3}
+  - {fileID: 2800000, guid: 99707cb03df27d54abdf4f0f2c8081a7, type: 3}
+  - {fileID: 2800000, guid: 069d3536b2222ab4eb4345308e5a5674, type: 3}
+  - {fileID: 2800000, guid: 1f107b15315be914093594fabffa57a9, type: 3}
 --- !u!114 &114196137317984862
 MonoBehaviour:
   m_ObjectHideFlags: 1
