@@ -205,7 +205,7 @@ public class Osu : MonoBehaviour
                 map_author_mapper = "Saiya // Garven";
                 break;
             case 32:
-                map_song = "All Falls Down (feat. Noah Cyrus with Digital Farm Animals)";
+                map_song = "All Falls Down\n(feat. Noah Cyrus with Digital Farm Animals)";
                 map_author_mapper = "Alan Walker // Plaudible";
                 break;
             case 33:
@@ -334,7 +334,7 @@ public class Osu : MonoBehaviour
                 break;
             case 64:
                 map_song = "Snow Drive(01.23)";
-                map_author_mapper = "Omoi";
+                map_author_mapper = "Omoi // Kroytz";
                 break;
             case 65:
                 map_song = "Frame of Mind";
