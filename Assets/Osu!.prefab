@@ -678,7 +678,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ModuleType: osu
-  ModuleDisplayName: Osu!
+  ModuleDisplayName: osu!
   RequiresTimerVisibility: 0
 --- !u!114 &114423979713970086
 MonoBehaviour:
