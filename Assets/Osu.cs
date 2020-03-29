@@ -11,9 +11,11 @@ public class Osu : MonoBehaviour
     public KMSelectable canvas, textbox;
     public TextMesh MapInfo_Map;
     public MeshRenderer canvas_image;
-    public Texture[] BGimage; //50 images
+    public Texture[] BackgroundImage; // background pictures
 
-    //Bomb ID generation for logging
+    private List<int> checkDuplicates = new List<int>();
+
+    //Bomb ID incrementation for logging
     static int _moduleIdCounter = 1;
     int _moduleID = 0;
 
@@ -56,16 +58,16 @@ public class Osu : MonoBehaviour
         int selectedmapBG;
         for (int i = 0 ; i <= 4 ; i++)
         {
-            selectedmapBG = Random.Range(0, 70);
+            selectedmapBG = Random.Range(0, 101); //change
             random_mapBG[i] = selectedmapBG;
-            for (int j = 0; j <= i - 1; j++)
+            while(checkDuplicates.Contains(selectedmapBG))
             {
-                while(selectedmapBG == random_mapBG[j])
-                    selectedmapBG = Random.Range(0, 70);
+                selectedmapBG = Random.Range(0, 101); //change
             }
-            Debug.LogFormat("[osu! #{0}]Generated map background: {1}", _moduleID ,selectedmapBG);
+            Debug.LogFormat("[osu! #{0}] Generated map background: {1}", _moduleID ,selectedmapBG);
         }
-        canvas_image.material.mainTexture = BGimage[random_mapBG[0]];
+        checkDuplicates.Clear();
+        canvas_image.material.mainTexture = BackgroundImage[random_mapBG[0]];
     }
 
     void generate_mapinfo()
@@ -356,8 +358,131 @@ public class Osu : MonoBehaviour
                 map_song = "Uchiage Hanabi";
                 map_author_mapper = "DAOKO x Kenshi Yonezu // Monstrata";
                 break;
+            case 70:
+                map_song = "Burnt Rice (feat. YUNG GEMMY)";
+                map_author_mapper = "Shawn Wasabi + YDG // ScubDomino";
+                break;
+            case 71:
+                map_song = "(can you) understand me?";
+                map_author_mapper = "Komiya Mao // Sotarks";
+                break;
+            case 72:
+                map_song = "the executioner";
+                map_author_mapper = "zts // -kevincela-";
+                break;
+            case 73:
+                map_song = "quaver";
+                map_author_mapper = "dj TAKA // Sotarks";
+                break;
+            case 74:
+                map_song = "Wind God Girl";
+                map_author_mapper = "Demetori // lkp";
+                break;
+            case 75:
+                map_song = "lastendconductor";
+                map_author_mapper = "zts // Yohanes";
+                break;
+            case 76:
+                map_song = "Second Run";
+                map_author_mapper = "Nam Goo-Min // bmin11";
+                break;
+            case 77:
+                map_song = "Virtual Paradise";
+                map_author_mapper = "AK X LYNX ft. Veela // alacat";
+                break;
+            case 78:
+                map_song = "Tenko";
+                map_author_mapper = "iru1919 // Seto Kousuke";
+                break;
+            case 79:
+                map_song = "Crack Traxxxx";
+                map_author_mapper = "Lite Show Magic (t+pazolite vs C-Show) /\n/ Fatfan Kolek";
+                break;
+            case 80:
+                map_song = "Cirno's Perfect Math Class";
+                map_author_mapper = "IOSYS // Louis Cyphre";
+                break;
+            case 81:
+                map_song = "Kikoku Doukoku Jigokuraku";
+                map_author_mapper = "Halozy // Hollow Wings";
+                break;
+            case 82:
+                map_song = "MEGALOVANIA (Camellia Remix)";
+                map_author_mapper = "toby fox // Regou";
+                break;
+            case 83:
+                map_song = "Rainbow Tylenol";
+                map_author_mapper = "Kitsune^2 // Blue Dragon";
+                break;
+            case 84:
+                map_song = "Kusaregedou to Chocolate";
+                map_author_mapper = "PinocchioP // Kenterz9";
+                break;
+            case 85:
+                map_song = "Monochrome Butterfly";
+                map_author_mapper = "Aitsuki Nakuru // Settia";
+                break;
+            case 86:
+                map_song = "Algebra";
+                map_author_mapper = "Function Phantom // Bonzi";
+                break;
+            case 87:
+                map_song = "Wizdomiot";
+                map_author_mapper = "LeaF // Asahina Momoko";
+                break;
+            case 88:
+                map_song = "YoiYoi Kokon";
+                map_author_mapper = "REOL // Pho";
+                break;
+            case 89:
+                map_song = "Night of Knights";
+                map_author_mapper = "beatMARIO // alacat";
+                break;
+            case 90:
+                map_song = "The Prelude To Bereavement";
+                map_author_mapper = "Shadow Of Intent // PoNo";
+                break;
+            case 91:
+                map_song = "Droopy likes ricochet";
+                map_author_mapper = "C418 // Bass-chan";
+                break;
+            case 92:
+                map_song = "Toumei Elegy";
+                map_author_mapper = "Konuko // Awaken";
+                break;
+            case 93:
+                map_song = "Magic Girl !!";
+                map_author_mapper = "Shihori // Frostmourne";
+                break;
+            case 94:
+                map_song = "In the Flame";
+                map_author_mapper = "Darren Korb and Ashley Barrett // TheMefisto";
+                break;
+            case 95:
+                map_song = "Castle of Glass";
+                map_author_mapper = "Linkin Park // narakucrimson";
+                break;
+            case 96:
+                map_song = "Electrodynamics";
+                map_author_mapper = "dj-Nate // CookieBite";
+                break;
+            case 97:
+                map_song = "Airborne Robots";
+                map_author_mapper = "F-777 // CookieBite";
+                break;
+            case 98:
+                map_song = "The Nights";
+                map_author_mapper = "Avicii // Kazuya";
+                break;
+            case 99:
+                map_song = "TRIPLE PLAY";
+                map_author_mapper = "KASAI HARCORES // Chickensio";
+                break;
+            case 100:
+                map_song = "dreamenddischarger";
+                map_author_mapper = "zts // EvilElvis";
+                break;
         }
-
         MapInfo_Map.text = map_song + "\n" + map_author_mapper;
         Debug.LogFormat("[osu! #{0}] Generated map song: {1}. Author and creator: {2}", _moduleID, map_song, map_author_mapper);
     }
@@ -367,21 +492,21 @@ public class Osu : MonoBehaviour
         canvas_currentimagecounter++;
         if (canvas_currentimagecounter > 4)
             canvas_currentimagecounter = 0;
-        canvas_image.material.mainTexture = BGimage[random_mapBG[canvas_currentimagecounter]];
+        canvas_image.material.mainTexture = BackgroundImage[random_mapBG[canvas_currentimagecounter]];
     }
 
     void submit()
     {
-        Debug.LogFormat("[osu! #{0}]Submitted image: {1}. Correct image: {2}", _moduleID, random_mapBG[canvas_currentimagecounter], random_mapBG[random_mapinfo]);
+        Debug.LogFormat("[osu! #{0}] Submitted image: {1}. Correct image: {2}", _moduleID, random_mapBG[canvas_currentimagecounter], random_mapBG[random_mapinfo]);
         if (random_mapBG[canvas_currentimagecounter] == random_mapBG[random_mapinfo])
         {
             Module.HandlePass();
-            Debug.LogFormat("[osu! #{0}]Submission correct. Module solved. NOW GO CLICK THE CIRCLES!", _moduleID);
+            Debug.LogFormat("[osu! #{0}] Submission correct. Module solved. NOW GO CLICK THE CIRCLES!", _moduleID);
         }
         else
         {
             Module.HandleStrike();
-            Debug.LogFormat("[osu! #{0}]Submission incorrect. Strike incurred. Booo you suck!", _moduleID);
+            Debug.LogFormat("[osu! #{0}] Submission incorrect. Strike incurred. Boo hoo you suck!", _moduleID);
             init();
         }
     }
