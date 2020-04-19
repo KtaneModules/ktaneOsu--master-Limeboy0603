@@ -59,11 +59,12 @@ public class Osu : MonoBehaviour
         for (int i = 0 ; i <= 4 ; i++)
         {
             selectedmapBG = Random.Range(0, 101); //change
-            random_mapBG[i] = selectedmapBG;
+            checkDuplicates.Add(selectedmapBG);
             while(checkDuplicates.Contains(selectedmapBG))
             {
                 selectedmapBG = Random.Range(0, 101); //change
             }
+            random_mapBG[i] = selectedmapBG;
             Debug.LogFormat("[osu! #{0}] Generated map background: {1}", _moduleID ,selectedmapBG);
         }
         checkDuplicates.Clear();
