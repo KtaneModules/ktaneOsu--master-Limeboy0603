@@ -58,11 +58,11 @@ public class Osu : MonoBehaviour
         int selectedmapBG;
         for (int i = 0 ; i <= 4 ; i++)
         {
-            selectedmapBG = Random.Range(0, 101); //change
+            selectedmapBG = Random.Range(0, 107); //change
             checkDuplicates.Add(selectedmapBG);
             while(checkDuplicates.Contains(selectedmapBG))
             {
-                selectedmapBG = Random.Range(0, 101); //change
+                selectedmapBG = Random.Range(0, 107); //change
             }
             random_mapBG[i] = selectedmapBG;
             Debug.LogFormat("[osu! #{0}] Generated map background: {1}", _moduleID ,selectedmapBG);
@@ -483,6 +483,86 @@ public class Osu : MonoBehaviour
                 map_song = "dreamenddischarger";
                 map_author_mapper = "zts // EvilElvis";
                 break;
+            case 101:
+                map_song = "Winterglade";
+                map_author_mapper = "Makkon // Itachi_Uchiha";
+                break;
+            case 102:
+                map_song = "A Drunkard's Lemuria (Retro Ver.)";
+                map_author_mapper = "ZUN // Itachi_Uchiha";
+                break;
+            case 103:
+                map_song = "A FOOL MOON NIGHT";
+                map_author_mapper = "The Koxx // Astar";
+                break;
+            case 104:
+                map_song = "crossing field";
+                map_author_mapper = "LiSA // Ryafuka";
+                break;
+            case 105:
+                map_song = "Chikatto Chika Chika (TV Size)";
+                map_author_mapper = "Fujiwara Chika (CV: Kohara Konomi) // -[Pino]-";
+                break;
+            case 106:
+                map_song = "Undertale Boss Themes";
+                map_author_mapper = "toby fox // Arphimigon";
+                break;
+            case 107:
+                map_song = "Soulless 4";
+                map_author_mapper = "ExileLord // Woey";
+                break;
+            //case 108:
+            //    map_song = "";
+            //    map_author_mapper = "";
+            //    break;
+            //case 109:
+            //    map_song = "";
+            //    map_author_mapper = "";
+            //    break;
+            //case 110:
+            //    map_song = "";
+            //    map_author_mapper = "";
+            //    break;
+            //case 111:
+            //    map_song = "";
+            //    map_author_mapper = "";
+            //    break;
+            //case 112:
+            //    map_song = "";
+            //    map_author_mapper = "";
+            //    break;
+            //case 113:
+            //    map_song = "";
+            //    map_author_mapper = "";
+            //    break;
+            //case 114:
+            //    map_song = "";
+            //    map_author_mapper = "";
+            //    break;
+            //case 115:
+            //    map_song = "";
+            //    map_author_mapper = "";
+            //    break;
+            //case 116:
+            //    map_song = "";
+            //    map_author_mapper = "";
+            //    break;
+            //case 117:
+            //    map_song = "";
+            //    map_author_mapper = "";
+            //    break;
+            //case 118:
+            //    map_song = "";
+            //    map_author_mapper = "";
+            //    break;
+            //case 119:
+            //    map_song = "";
+            //    map_author_mapper = "";
+            //    break;
+            //case 120:
+            //    map_song = "";
+            //    map_author_mapper = "";
+            //    break;
         }
         MapInfo_Map.text = map_song + "\n" + map_author_mapper;
         Debug.LogFormat("[osu! #{0}] Generated map song: {1}. Author and creator: {2}", _moduleID, map_song, map_author_mapper);
