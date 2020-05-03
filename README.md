@@ -1,7 +1,7 @@
-KTANE regular mod: Osu!
+KTANE regular mod: osu!
 Created by Limeboy. 
 
-I do not own any images appearing in the module. Peppy pls don't sue me
+I do not own any images appearing in the module.
 
 MIT License
 
