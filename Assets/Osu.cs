@@ -7,6 +7,7 @@ using System.Text.RegularExpressions;
 public class Osu : MonoBehaviour
 {
     //public declearations on bomb
+    public KMAudio Audio;
     public KMBombModule Module;
     public KMSelectable canvas, textbox;
     public TextMesh MapInfo_Map;
@@ -574,10 +575,12 @@ public class Osu : MonoBehaviour
         if (canvas_currentimagecounter > 4)
             canvas_currentimagecounter = 0;
         canvas_image.material.mainTexture = BackgroundImage[random_mapBG[canvas_currentimagecounter]];
+        Audio.PlayGameSoundAtTransform(KMSoundOverride.SoundEffect.ButtonPress, canvas.transform);
     }
 
     void submit()
     {
+        Audio.PlayGameSoundAtTransform(KMSoundOverride.SoundEffect.ButtonPress, textbox.transform);
         Debug.LogFormat("[osu! #{0}] Submitted image: {1}. Correct image: {2}", _moduleID, random_mapBG[canvas_currentimagecounter], random_mapBG[random_mapinfo]);
         if (random_mapBG[canvas_currentimagecounter] == random_mapBG[random_mapinfo])
         {
