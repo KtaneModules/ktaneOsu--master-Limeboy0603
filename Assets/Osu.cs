@@ -571,16 +571,19 @@ public class Osu : MonoBehaviour
 
     void changeBG()
     {
+        Audio.PlayGameSoundAtTransform(KMSoundOverride.SoundEffect.ButtonPress, canvas.transform);
+        canvas.AddInteractionPunch();
         canvas_currentimagecounter++;
         if (canvas_currentimagecounter > 4)
             canvas_currentimagecounter = 0;
         canvas_image.material.mainTexture = BackgroundImage[random_mapBG[canvas_currentimagecounter]];
-        Audio.PlayGameSoundAtTransform(KMSoundOverride.SoundEffect.ButtonPress, canvas.transform);
+        
     }
 
     void submit()
     {
         Audio.PlayGameSoundAtTransform(KMSoundOverride.SoundEffect.ButtonPress, textbox.transform);
+        textbox.AddInteractionPunch();
         Debug.LogFormat("[osu! #{0}] Submitted image: {1}. Correct image: {2}", _moduleID, random_mapBG[canvas_currentimagecounter], random_mapBG[random_mapinfo]);
         if (random_mapBG[canvas_currentimagecounter] == random_mapBG[random_mapinfo])
         {
@@ -599,13 +602,14 @@ public class Osu : MonoBehaviour
     private readonly string TwitchHelpMessage = @"Change picture with !{0} change. Submit with !{0} submit.";
 #pragma warning restore 414
 
-    KMSelectable[] ProcessTwitchCommand(string command)
+    IEnumerator ProcessTwitchCommand(string command)
     {
+        yield return null;
         command = command.ToLowerInvariant().Trim();
         if (command.Equals("change"))
-            return new KMSelectable[] { canvas };
+            canvas.OnInteract();
         else if (command.Equals("submit"))
-            return new KMSelectable[] { textbox };
-        return null;
+            textbox.OnInteract();
+        yield return null;
     }
 }
