@@ -14,14 +14,7 @@ MonoBehaviour:
   id: osu
   title: osu!
   author: Limeboy
-  description: 'CLICK THE CIRCLES
-
-
-    Credits to all osu! beatmappers and background image creators. I don''t own any
-    pictures shown in this module.
-
-
-    More beatmaps will be added in the future.'
+  description: Good job convincing me.
   version: 1.0
   outputFolder: build
   previewImage: {fileID: 2800000, guid: 32db8d073fc00074cb9170fc921f0fc9, type: 3}
