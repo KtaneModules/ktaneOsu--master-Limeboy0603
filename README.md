@@ -1,7 +1,7 @@
 KTANE regular mod: osu!
 Created by Limeboy. 
 
-I do not own any images appearing in the module.
+I do not own any images appearing in the module. The copyright of all images used belongs to their respective owners.
 
 MIT License
 
