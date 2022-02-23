@@ -13,8 +13,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: osu
   title: osu!
-  author: Limeboy
-  description: Good job convincing me.
-  version: 1.0
+  author: Limeboy, Eltrick
+  description: 'Submit the correct background image of an osu! beatmap.
+
+
+    Original by Limeboy
+
+    Maintained and updated by Eltrick
+
+    Bugfixes and map additions will now go through me, either at request or whenever
+    I feel like doing so.
+
+
+    Please unsubscribe from the old version.'
+  version: 1.15
   outputFolder: build
   previewImage: {fileID: 2800000, guid: 32db8d073fc00074cb9170fc921f0fc9, type: 3}
