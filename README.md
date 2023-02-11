@@ -1,5 +1,5 @@
 KTANE regular mod: osu!
-Originally created by Limeboy. This module is now being maintained by Eltrick.
+Originally created by Limeboy. **This module is now being maintained by Eltrick.**
 
 I do not own any images appearing in the module. The copyright of all images used belongs to their respective owners.
 
